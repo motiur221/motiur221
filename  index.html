@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafin | Ethical Hacker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-text">
+            <span class="hacker-text">SYSTEM BOOTING...</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="hacker-text">root@shafin:~#</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">~/home</a></li>
+            <li><a href="#about" class="nav-link">~/about</a></li>
+            <li><a href="#skills" class="nav-link">~/skills</a></li>
+            <li><a href="#projects" class="nav-link">~/projects</a></li>
+            <li><a href="#contact" class="nav-link">~/contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="SH4F1N">SH4F1N</h1>
+                <h2 class="typing-text">
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="subtitle">Ethical Hacker • Security Researcher • CTF Player</p>
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="close"></span>
+                            <span class="minimize"></span>
+                            <span class="maximize"></span>
+                        </div>
+                        <span class="terminal-title">shafin@kali:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> whoami</p>
+                        <p class="output">shafin - Ethical Hacker</p>
+                        <p><span class="prompt">$</span> cat about.txt</p>
+                        <p class="output">17 y/o | Security Enthusiast | Bug Hunter</p>
+                        <p><span class="prompt">$</span> <span class="typing-command"></span><span class="cursor">█</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">[ about_me ]</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="hexagon">
+                        <div class="hexagon-inner">
+                            <img src="assets/images/shafin.jpg" alt="Shafin" onerror="this.src='https://avatars.githubusercontent.com/u/583231?v=4'">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm <span class="red-text">Shafin</span></h3>
+                    <p>A passionate ethical hacker and cybersecurity student. I started my journey in hacking at 15 and have been exploring the world of cybersecurity ever since.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>CTF Challenges Solved</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Bug Reports</p>
+                        </div>
+                        <div class="stat">
+                            <h4>3</h4>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">[ skills ]</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Penetration Testing</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Network Security</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Python Scripting</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <i class="fas fa-bug"></i>
+                        <h3>Bug Hunting</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">[ projects ]</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <img src="assets/images/project1.jpg" alt="CTF Toolkit" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <div class="project-content">
+                        <h3>CTF Toolkit</h3>
+                        <p>Custom toolkit for Capture The Flag competitions with automation scripts.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Bash</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <img src="assets/images/project2.jpg" alt="Network Scanner" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Scanner</h3>
+                        <p>Advanced network scanning tool with vulnerability detection.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Nmap</span>
+                            <span>Networking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <img src="assets/images/project3.jpg" alt="Keylogger" onerror="this.src='https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Educational Keylogger</h3>
+                        <p>Security research project for educational purposes only.</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>Windows API</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">[ contact ]</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>shafin@hacker.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+880 1XXX-XXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-hackerrank"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="hacker-text">© 2024 SH4F1N. ALL RIGHTS RESERVED.</p>
+            <p class="disclaimer">This website is for educational purposes only. All activities are legal and ethical.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
